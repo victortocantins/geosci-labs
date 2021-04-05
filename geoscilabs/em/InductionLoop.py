@@ -9,6 +9,8 @@ Created on Fri Dec 09 10:43:37 2016
 @author: Devin
 """
 import numpy as np
+np.seterr(divide='ignore', invalid='ignore') # => suppress the warnings for a block of code == Victor.
+
 import scipy.special as sp
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter, FormatStrFormatter
