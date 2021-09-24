@@ -30,15 +30,15 @@ with open("README.md", "r") as f:
 
 setup(
     name="geoscilabs",
-    version="0.2.4",
-    packages=find_packages(),
+    version="0.3.0",
+    packages=find_packages(exclude=["tests"]),
     install_requires=[
-        "numpy>=1.7",
-        "scipy>=1.0",
-        "matplotlib>2.1",
+        "numpy>=1.21",
+        "scipy>=1.7",
+        "matplotlib>=3.4",
         "ipywidgets",
-        "SimPEG>=0.14.1",
-        "discretize>=0.4.14",
+        "SimPEG>=0.15.0",
+        "discretize>=0.7.0",
         "empymod>=2.0.0",
         "jupyter",
         "deepdish",
